@@ -13,7 +13,7 @@ var header = new Vue({
   `,
   data () {
 	    return {
-	    	headerTitle: 'Hello World!'
+	    	headerTitle: 'AdonisVue_App'
 		}
 	}
 })
