@@ -1,1 +1,7 @@
 <p>{{ title }}</p>
+
+<ul>
+  @each(post in posts)
+    <li>{{post.title}}</li>
+  @endeach
+</ul>
