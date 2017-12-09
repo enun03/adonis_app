@@ -15,5 +15,13 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.on('/').render('home')
+
 Route.on('/about').render('about')
+
+Route.get('/posts', 'PostController.index')
+
+//Adding a function directly in the route
+Route.get('test/:id', ({ params }) => {
+  return `Test id is ${params.id}`;
+})
